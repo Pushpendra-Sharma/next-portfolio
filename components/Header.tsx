@@ -1,36 +1,24 @@
 import React from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
+import heroImage from '@/images/hero.svg';
 
 export default function Header() {
   return (
-    <header className='bg-emerald-700' data-testid='header'>
-      <nav className='container mx-auto px-4 py-2 flex items-center justify-between'>
-        <div className='flex items-center'>
-          <Link href='/' className='text-white text-lg font-semibold'>
-            IAmDeveloper
-          </Link>
-        </div>
-        <ul className='flex items-center space-x-4'>
-          <li>
-            <Link
-              href='/'
-              className='text-gray-100 hover:text-white'
-              data-testid='home-link'
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href='/projects'
-              className='text-gray-100 hover:text-white'
-              data-testid='projects-link'
-            >
-              Projects
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <header
+      className='flex flex-col justify-evenly items-center gap-2 flex-1 m-0 px-4 py-8 box-border'
+      data-testid='header'
+    >
+      <Image
+        alt='hero-image'
+        className='max-w-[80%] md:max-w-sm block m-auto'
+        src={heroImage}
+      />
+      <h1 className='text-2xl text-center text-gray-800 mt-4 p-4'>
+        Hi, I am <span className='text-emerald-700'>Pushpendra</span>
+      </h1>
+      <p className='m-0 p-2 text-justify max-w-2xl'>
+        I am a Frontend developer.
+      </p>
     </header>
   );
 }
