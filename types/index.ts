@@ -14,10 +14,18 @@ export type SocialLinkT = {
   url: string;
 };
 
-export type ProjectT = {
+export interface ProjectT {
   heading: string;
   description: string;
   time: string;
   liveLink: string;
   srcLink: string;
+  type?: string;
+}
+
+export type HeaderT = {
+  heading: string;
+  subHeading?: string;
+  image?: string;
+  description:string
 };
