@@ -21,11 +21,26 @@ export interface ProjectT {
   liveLink: string;
   srcLink: string;
   type?: string;
+  technologies: Array<TechnologyT>;
 }
+
+export type TechnologyT =
+  | 'Atlaskit'
+  | 'NextJS'
+  | 'TypeScript'
+  | 'TailwindCSS'
+  | 'ExpressJS'
+  | 'NodeJS'
+  | 'JWT'
+  | 'Redux Toolkit'
+  | 'ReactJS'
+  | 'JavaScript'
+  | 'CSS3'
+  | 'HTML5';
 
 export type HeaderT = {
   heading: string;
   subHeading?: string;
   image?: string;
-  description:string
+  description: string;
 };
