@@ -6,9 +6,9 @@ import { headers } from '@/constants/headers';
 export const metadata = {
   title: 'Pushpendra Sharma | Projects',
   description:
-    'Explore my frontend projects and showcase of my skills in JavaScript, React, and web development.',
+    'Explore my frontend projects and showcase of my skills in JavaScript, React, and Web development.',
   keywords:
-    'frontend developer, JavaScript, React, web development, HTML5, CSS3',
+    'Frontend Developer, JavaScript, React, Web development, HTML5, CSS3',
   author: 'Pushpendra Sharma',
   twitter: {
     card: 'summary',
