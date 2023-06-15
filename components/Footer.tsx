@@ -5,13 +5,14 @@ import { socialLinks } from '@/constants/social';
 export default function Footer() {
   return (
     <footer className='bg-emerald-700 text-white py-6' data-testid='footer'>
-      <ul className='flex justify-center space-x-6'>
+      <ul className='flex justify-center space-x-6' data-testid='footer-links'>
         {socialLinks.map(socialLink => (
           <li className='' key={socialLink.label}>
             <Link
               href={socialLink.url}
               className='text-white'
               key={socialLink.label}
+              data-testid={`${socialLink.label}-link`}
             >
               <Image
                 data-testid={`${socialLink.label}-image`}
