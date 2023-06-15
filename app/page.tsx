@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main
-      className='flex flex-col items-stretch justify-evenly gap-2'
+      className='flex flex-col items-stretch justify-evenly gap-2 mt-12'
       data-testid='main-content'
     >
       <Header {...profileHeader} />
