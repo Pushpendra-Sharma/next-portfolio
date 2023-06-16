@@ -4,9 +4,15 @@ type ButtonPropsT = {
   label: string;
   btnType: 'primary' | 'secondary';
   url: string;
+  openInNewTab?: boolean;
 };
 
-export default function LinkButton({ label, url, btnType }: ButtonPropsT) {
+export default function LinkButton({
+  label,
+  url,
+  btnType,
+  openInNewTab = false,
+}: ButtonPropsT) {
   return (
     <Link
       className={`box-border rounded-md py-2 px-4 border ${
@@ -16,6 +22,7 @@ export default function LinkButton({ label, url, btnType }: ButtonPropsT) {
       }`}
       href={url}
       data-testid='link-button'
+      target={openInNewTab ? '_blank' : '_self'}
     >
       {label}
     </Link>
