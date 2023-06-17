@@ -4,6 +4,7 @@ import { ProjectT } from '@/types';
 import LinkButton from './LinkButton';
 
 interface ProjectSectionPropT extends ProjectT {
+  isBgGrey?: boolean;
   children?: ReactNode;
 }
 
@@ -13,11 +14,14 @@ export default function ProjectSection({
   liveLink,
   srcLink,
   time,
+  isBgGrey = false,
   children,
 }: ProjectSectionPropT) {
   return (
     <section
-      className='flex flex-col justify-evenly items-center gap-2 flex-1 m-0 px-4 py-8 box-border'
+      className={`flex flex-col justify-evenly items-center gap-2 flex-1 m-0 px-4 py-8 box-border sm:rounded-md ${
+        isBgGrey ? 'bg-gray-100' : 'bg-white'
+      }`}
       data-testid='project-container'
     >
       <h2 className='font-bold text-lg' data-testid='project-heading'>
@@ -34,17 +38,19 @@ export default function ProjectSection({
       </p>
 
       <div
-        className='box-border px-8 flex justify-between items-stretch gap-2'
+        className='box-border mt-2 sm:px-0 md:px-8 flex justify-evenly sm:justify-center items-stretch gap-8 w-full'
         data-testid='project-links'
       >
         <LinkButton
           btnType='secondary'
           label='View Source'
+          openInNewTab={true}
           url={srcLink}
         />
         <LinkButton
           btnType='primary'
           label='Live Project'
+          openInNewTab={true}
           url={liveLink}
         />
       </div>

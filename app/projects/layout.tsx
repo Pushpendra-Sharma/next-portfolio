@@ -25,7 +25,7 @@ export default function ProjectsLayout({
 
   return (
     <main
-      className='flex flex-col items-center justify-between p-24'
+      className='flex flex-col items-center justify-between mt-12 p-0 sm:px-16 md:px-24 '
       data-testid='projects-layout'
     >
       <Header {...projectsHeader} />
