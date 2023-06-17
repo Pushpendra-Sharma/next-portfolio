@@ -21,6 +21,7 @@ const config = {
     '!<rootDir>/*.config.js',
     '!<rootDir>/coverage/**',
     '!<rootDir>/mocks/**',
+    '!<rootDir>/types/**',
   ],
   coverageDirectory: 'coverage',
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
@@ -30,7 +31,7 @@ const config = {
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
 
     // Handle CSS imports (without CSS modules)
-    '^.+\\.(css|sass|scss)$': '<rootDir>/mocks/styleMock.js',
+    '^.+\\.(css|sass|scss)$': '<rootDir>/mocks/styleMock.css',
 
     // Handle image imports
     // https://jestjs.io/docs/webpack#handling-static-assets
