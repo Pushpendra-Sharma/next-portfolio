@@ -15,6 +15,7 @@ describe('ProjectSection component', () => {
     const projectHeading = screen.getByTestId('project-heading');
     const projectTime = screen.getByTestId('project-time');
     const projectDescription = screen.getByTestId('project-description');
+    const projectTechnologies = screen.getByTestId('project-technologies');
     const projectLinks = screen.getByTestId('project-links');
     const projectGithubLink = screen.getByText('View Source');
     const projectLiveLink = screen.getByText('Live Project');
@@ -23,8 +24,11 @@ describe('ProjectSection component', () => {
     expect(projectHeading).toHaveTextContent(projectProps.heading);
     expect(projectTime).toHaveTextContent(projectProps.time);
     expect(projectDescription).toHaveTextContent(projectProps.description);
+    expect(projectTechnologies).toBeInTheDocument();
     expect(projectLinks).toBeInTheDocument();
     expect(projectGithubLink).toHaveAttribute('href', projectProps.srcLink);
+    expect(projectGithubLink).toHaveAttribute('target', '_blank');
     expect(projectLiveLink).toHaveAttribute('href', projectProps.liveLink);
+    expect(projectLiveLink).toHaveAttribute('target', '_blank');
   });
 });

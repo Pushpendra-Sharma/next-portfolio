@@ -14,9 +14,11 @@ export default function ProjectSection({
   liveLink,
   srcLink,
   time,
+  technologies,
   isBgGrey = false,
   children,
 }: ProjectSectionPropT) {
+  const tachnologiesCount = technologies.length;
   return (
     <section
       className={`flex flex-col justify-evenly items-center gap-2 flex-1 m-0 px-4 py-8 box-border sm:rounded-md ${
@@ -27,7 +29,7 @@ export default function ProjectSection({
       <h2 className='font-bold text-lg' data-testid='project-heading'>
         {heading}
       </h2>
-      <small className='text-sm' data-testid='project-time'>
+      <small className='text-xs' data-testid='project-time'>
         {time}
       </small>
       <p
@@ -36,7 +38,17 @@ export default function ProjectSection({
       >
         {description}
       </p>
-
+      <div
+        className='flex gap-2 flex-wrap space-between m-0 px-2'
+        data-testid='project-technologies'
+      >
+        <span className='text-sm font-semibold'>Technologies:&nbsp;</span>
+        {technologies.map((tech, index) => (
+          <span key={tech} className='text-sm text-gray-900'>
+            {`${tech}${index === tachnologiesCount - 1 ? '' : ', '}`}
+          </span>
+        ))}
+      </div>
       <div
         className='box-border mt-2 sm:px-0 md:px-8 flex justify-evenly sm:justify-center items-stretch gap-8 w-full'
         data-testid='project-links'
