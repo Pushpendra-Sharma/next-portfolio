@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+Welcome to my portfolio website! This website showcases my skills, projects, and experience as a web developer. Here, you'll find information about me, my work, and how to get in touch with me. Feel free to explore and learn more about my journey in the world of web development.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [About](#about)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
+- [Links](#links)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I am a Frontend Developer with experience working at Infosys as a React Developer and am currently employed at Revyz as a Software Engineer. I am passionate about creating engaging user interfaces and delivering high-quality web applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Projects
 
-## Learn More
+The "Projects" section highlights some of the notable projects I have worked on. Each project is accompanied by a description, technologies used, and links to live demos and source code repositories. Feel free to explore these projects to get a better understanding of my technical skills and problem-solving abilities.
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I continuously strive to enhance my skills and stay up-to-date with the latest trends in web development. I possess expertise in ReactJS, JavaScript, ReduxJS, HTML5, CSS3 and TailwindCSS. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+With a strong command over these technologies, I am capable of building dynamic user interfaces, developing robust applications, managing application states efficiently, and creating web applications with enhanced performance and modern design approaches.
 
-## Deploy on Vercel
+I am also familiar with NextJS, TypeScript, NodeJS, ExpressJS and MongoDB which help me to create full-stack applications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To get in touch with me, the "Contact" section provides my contact information. Feel free to reach out if you have any inquiries, or feedback, or just want to connect. I'm always open to new ideas and collaborations.
+
+Thank you for visiting my portfolio website. I hope you find it informative and visually appealing. If you have any feedback or suggestions, please don't hesitate to let me know. Enjoy exploring!
+
+## Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ietl-pushpendra-sharma/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ietl_pushpendra)
